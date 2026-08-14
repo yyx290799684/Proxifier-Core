@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Proxifier Core</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="proxies">Proxies</string>
+    <string name="rules">Rules</string>
+    <string name="ksu">KernelSU</string>
+    <string name="logs">Logs</string>
+
+    <string name="working_mode">Working Mode</string>
+    <string name="mode_vpn">VPN Service (Non-Root)</string>
+    <string name="mode_ksu">KernelSU (Root Transparent)</string>
+
+    <string name="status_connected">Connected</string>
+    <string name="status_stopped">Stopped</string>
+    <string name="tap_to_start">Tap to Start Proxy Engine</string>
+    <string name="active_proxy_server">Active Proxy Server</string>
+    <string name="no_active_server">No Active Proxy Selected</string>
+    <string name="switch_node">Switch Node</string>
+
+    <string name="speed_upload">Upload Speed</string>
+    <string name="speed_download">Download Speed</string>
+
+    <string name="action_proxy">PROXY</string>
+    <string name="action_direct">DIRECT</string>
+    <string name="action_reject">BLOCK</string>
+
+    <string name="select_proxy_server">Select Target Proxy Server</string>
+    <string name="default_active_proxy">Default Active Proxy</string>
+    <string name="qs_tile_label">Proxifier Switch</string>
+</resources>

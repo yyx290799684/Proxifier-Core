@@ -1,0 +1,6 @@
+{
+  "name": "Proxifier Core",
+  "description": "KernelSU Root & VPN SOCKS5 Transparent Proxy and Rules Router",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
