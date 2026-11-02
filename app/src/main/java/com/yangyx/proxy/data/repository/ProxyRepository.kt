@@ -153,72 +153,7 @@ class ProxyRepository(private val context: Context) {
     }
 
     suspend fun initializeDefaultData() = withContext(Dispatchers.IO) {
-        val existingProxies = allProxies.first()
-        if (existingProxies.isEmpty()) {
-            val defaultProxy1 = ProxyServer(
-                name = "US High-Speed Node",
-                type = ProxyType.SOCKS5,
-                host = "104.28.16.88",
-                port = 1080,
-                enableUdp = true,
-                isActive = true,
-                colorTagHex = "#3B82F6",
-                latencyMs = 45
-            )
-            val defaultProxy2 = ProxyServer(
-                name = "Hong Kong Premium SOCKS5",
-                type = ProxyType.SOCKS5,
-                host = "47.242.10.12",
-                port = 1080,
-                enableUdp = true,
-                isActive = false,
-                colorTagHex = "#10B981",
-                latencyMs = 28
-            )
-            val defaultProxy3 = ProxyServer(
-                name = "Tokyo Fast Proxy",
-                type = ProxyType.SOCKS5,
-                host = "139.162.80.20",
-                port = 1080,
-                enableUdp = true,
-                isActive = false,
-                colorTagHex = "#8B5CF6",
-                latencyMs = 62
-            )
-
-            proxyDao.insertProxy(defaultProxy1)
-            proxyDao.insertProxy(defaultProxy2)
-            proxyDao.insertProxy(defaultProxy3)
-        }
-
-        val existingRules = allRules.first()
-        if (existingRules.isEmpty()) {
-            val rule1 = ProxyRule(
-                name = "Bypass Local LAN & Private IPs",
-                isEnabled = true,
-                priority = 1,
-                action = RuleAction.DIRECT,
-                targetIps = listOf("127.0.0.1/32", "192.168.0.0/16", "10.0.0.0/8", "172.16.0.0/12")
-            )
-            val rule2 = ProxyRule(
-                name = "Google & GitHub Services",
-                isEnabled = true,
-                priority = 2,
-                action = RuleAction.PROXY,
-                targetDomains = listOf("*.google.com", "*.github.com", "*.githubusercontent.com", "t.me")
-            )
-            val rule3 = ProxyRule(
-                name = "Block Known Trackers",
-                isEnabled = true,
-                priority = 3,
-                action = RuleAction.REJECT,
-                targetDomains = listOf("*.doubleclick.net", "*.analytics.google.com")
-            )
-
-            ruleDao.insertRule(rule1)
-            ruleDao.insertRule(rule2)
-            ruleDao.insertRule(rule3)
-        }
+        // App starts with clean empty state: no pre-configured proxies or rules
     }
 
     fun setEngineMode(mode: EngineMode) {

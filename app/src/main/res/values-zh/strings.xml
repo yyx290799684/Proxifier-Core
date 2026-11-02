@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">内核代理 (Proxifier Core)</string>
+    <string name="app_name">Proxifier Core</string>
     <string name="dashboard">仪表盘</string>
     <string name="proxies">代理节点</string>
     <string name="rules">分流规则</string>

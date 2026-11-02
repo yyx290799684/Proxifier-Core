@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Subtle Security Shield Outline -->
+    <path
+        android:pathData="M54,28 C62,28 71.5,30.5 75.5,34 C77.5,35.5 78.5,38 78.5,41 C78.5,53 72,66.5 55.5,78.5 C54.6,79.2 53.4,79.2 52.5,78.5 C36,66.5 29.5,53 29.5,41 C29.5,38 30.5,35.5 32.5,34 C36.5,30.5 46,28 54,28 Z"
+        android:strokeWidth="1.2"
+        android:strokeColor="#FFFFFFFF"
+        android:fillColor="#22FFFFFF" />
+
+    <!-- 'P' Vertical Core Pillar -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M36,37.5 L36,70.5 A3.5,3.5 0 0,0 43,70.5 L43,37.5 A3.5,3.5 0 0,0 36,37.5 Z" />
+
+    <!-- 'P' Dynamic Loop & Forward Routing Arrow -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M43,34 C54,34 63,36 68.5,41 C70.5,42.8 73,44 73,44 C73,44 70.5,45.2 68.5,47 C63,52 54,54 43,54 L43,47.5 C51,47.5 58,46 61.5,44 C58,42 51,40.5 43,40.5 Z" />
+
+    <!-- Core Nexus Node -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M52,44 m -2.5,0 a 2.5,2.5 0 1,0 5,0 a 2.5,2.5 0 1,0 -5,0" />
+
+    <!-- Secondary Routing Beam -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M46,63.5 L64.5,56.5 C66,56 67.5,56.8 67.8,58.2 L68,59 C68.3,60.2 67.5,61.2 66.5,61.6 L50,67.5 C48.5,68.2 46.5,67.2 45.8,65.8 Z" />
+
+</vector>
